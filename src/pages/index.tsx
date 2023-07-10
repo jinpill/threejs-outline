@@ -20,7 +20,8 @@ const Home = () => {
       <Controls onChange={setSelection} />
       <Selection>
         <EffectComposer multisampling={8} autoClear={false}>
-          <Outline blur visibleEdgeColor={0xff0000} edgeStrength={100} width={1000} />
+          {/* #FD8F00 */}
+          <Outline blur visibleEdgeColor={0x0000ff} edgeStrength={100} width={1000} />
         </EffectComposer>
         {objects.map((object) => (
           <Object
